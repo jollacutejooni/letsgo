@@ -1,0 +1,138 @@
+<html>
+    <head>
+        <meta data-n-head="ssr" name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="/static/styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="first">
+                <div class="overlay">
+                    <p class="first-top">
+                        이준호<br>
+                        &hearts;<br>
+                        장우영
+                    </p>
+                    <p class="first-bottom">2022.09.04 SUN 2PM</p>
+                </div>
+            </div>
+            <div class="row2">
+                <p>
+                    <strong>초대합니다</strong><br><br><br>
+                    지긋지긋하고 징글징글했던<br><br>
+                    13년의 짝사랑을 마무리하려 합니다<br><br>
+                    더 이상 홀로 앓는 것이 아닌<br><br>
+                    함께 부비고 나누며 닳고 닮아가려 합니다<br><br>
+                    저희 둘 인생에 있어 가장 아름다운,<br><br>
+                    가장 뜨거운 이 순간을 함께 해주십시오<br><br>
+                </p>
+            </div>
+            <img src="/static/a.jpg">
+            <div class="row">
+                <table class="intro">
+                    <tbody>
+                        <tr>
+                            <td><strong>박진영과 Hottest</strong></td>
+                            <td><small>의 오남</small></td>
+                            <td>
+                                <strong>준호</strong>
+                                <a href="tel:01019900125">
+                                    <svg style="width:15px;height:15px" viewBox="0 0 24 24">
+                                        <path fill="currentColor" d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z" />
+                                    </svg>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>박진영과 Hottest</strong></td>
+                            <td><small>의 사남</small></td>
+                            <td>
+                                <strong>우영</strong>
+                                <a href="tel:01019900125">
+                                    <svg style="width:15px;height:15px" viewBox="0 0 24 24">
+                                        <path fill="currentColor" d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z" />
+                                    </svg>
+                                </a>
+                            </td>
+        
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="row2">
+                <h3>9월 4일</h3>
+                <h5>뜨거운 오후 2시</h5>
+                <hr>
+                <table class="calender">
+                    <thead>
+                        <tr>
+                            <td class="sun">일</td>
+                            <td>월</td>
+                            <td>화</td>
+                            <td>수</td>
+                            <td>목</td>
+                            <td>금</td>
+                            <td class="sat">토</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="out">28</td>
+                            <td class="out">29</td>
+                            <td class="out">30</td>
+                            <td class="out">31</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td><strong>4</strong></td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>14</td>
+                            <td>15</td>
+                            <td>16</td>
+                            <td>17</td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>19</td>
+                            <td>20</td>
+                            <td>21</td>
+                            <td>22</td>
+                            <td>23</td>
+                            <td>24</td>
+                        </tr>
+                        <tr>
+                            <td>25</td>
+                            <td>26</td>
+                            <td>27</td>
+                            <td>28</td>
+                            <td>29</td>
+                            <td>30</td>
+                            <td class="out">1</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>준호&hearts;우영의 결혼식이 {{ diff }}일 남았습니다</p>
+                <hr>
+            </div>
+            <div class="row">
+                <h2>방명록 남기기</h2>
+                <form method="POST" action="/write">
+                    <input type="text" name="name">
+                    <textarea rows="3" name="content"></textarea>
+                    <button type="submit">남기기</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
